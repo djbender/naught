@@ -20,5 +20,6 @@ group :test do
   gem 'mime-types', '~> 1.25', :platforms => [:jruby]
   gem 'rest-client', '~> 1.6.0', :platforms => [:jruby]
   gem 'rspec', '>= 2.14'
-  gem 'rubocop', '~> 0.34.0', :platforms => [:ruby_27, :ruby_30, :ruby_31]
+  gem 'simplecov'
+  # gem 'rubocop', '~> 0.34.0', :platforms => [:ruby_27, :ruby_30, :ruby_31]
 end
