@@ -20,22 +20,22 @@ jobs:
         experimental: [false]
         include:
           - ruby: jruby
-            experiemental: true
+            experimental: true
             os: ubuntu-latest
           - ruby: jruby
-            experiemental: true
+            experimental: true
             os: macos-latest
           - ruby: jruby-head
-            experiemental: true
+            experimental: true
             os: ubuntu-latest
           - ruby: jruby-head
-            experiemental: true
+            experimental: true
             os: macos-latest
           - ruby: truffleruby-head
-            experiemental: true
+            experimental: true
             os: ubuntu-latest
           - ruby: truffleruby-head
-            experiemental: true
+            experimental: true
             os: macos-latest
 
     runs-on: ${{ matrix.os }}
