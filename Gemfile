@@ -16,10 +16,10 @@ end
 
 group :test do
   gem 'json', :platforms => [:jruby]
-  gem 'libnotify'
+  gem 'libnotify', '~> 0.9.4'
   gem 'mime-types', '~> 1.25', :platforms => [:jruby]
-  gem 'rest-client', '~> 1.6.0', :platforms => [:jruby]
+  gem 'rest-client', '~> 1.8.0', :platforms => [:jruby]
   gem 'rspec', '>= 2.14'
-  gem 'simplecov'
+  gem 'simplecov', '~> 0.21'
   # gem 'rubocop', '~> 0.34.0', :platforms => [:ruby_27, :ruby_30, :ruby_31]
 end
