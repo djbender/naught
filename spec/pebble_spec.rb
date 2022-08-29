@@ -47,7 +47,7 @@ describe 'pebble null object' do
 
   context 'when is called from a block' do
     it 'prints the indication of a block',
-       :pending => jruby? || rubinius? || ruby_18? do
+       :pending => jruby? do
       expect(test_output).to receive(:puts).twice.
         with(/from block/)
       Caller.new.call_method_inside_block(null)
@@ -62,7 +62,7 @@ describe 'pebble null object' do
 
   context 'when is called from many levels blocks' do
     it 'prints the indication of blocks and its levels',
-       :pending => jruby? || rubinius? || ruby_18? do
+       :pending => jruby? do
       expect(test_output).to receive(:puts).exactly(4).times.
         with(/from block \(2 levels\)/)
       Caller.new.call_method_inside_nested_block(null)

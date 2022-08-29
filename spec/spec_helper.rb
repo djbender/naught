@@ -2,9 +2,8 @@ GEM_ROOT = File.expand_path('../../', __FILE__)
 $LOAD_PATH.unshift File.join(GEM_ROOT, 'lib')
 
 require 'simplecov'
-require 'coveralls'
 
-SimpleCov.formatters = [SimpleCov::Formatter::HTMLFormatter, Coveralls::SimpleCov::Formatter]
+SimpleCov.formatters = SimpleCov::Formatter::HTMLFormatter
 
 SimpleCov.start do
   add_filter '/spec/'
